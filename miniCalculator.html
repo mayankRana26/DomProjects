@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniClaculator</title>
+    <style>
+        body{
+            background-color:antiquewhite;
+        }
+       #first{
+      margin: 50px 20px 20px 40px;
+       }
+       #add,#sub,#mul,#div{
+        margin-left: 40px;
+        /* margin-right: 10px; */
+       }
+    </style>
+</head>
+
+<body>
+   
+        <input type="text" placeholder="enter 1st number" id="first">
+        <input type="text" placeholder="enter 2nd number" id="second">
+ 
+
+    <br>
+  
+        <button id="add" onclick="add()" >Add</button>
+        <button id="sub" onclick="sub()" >Sub</button>
+        <button id="mul" onclick="mul()" >Mul</button>
+        <button id="div" onclick="div()" >Div</button>
+
+  
+</body>
+<script>
+      let inp1=document.getElementById("first");
+    let inp2=document.getElementById("second");
+    
+    function add(){
+        let num1= +inp1.value
+        let num2= +inp2.value
+        let result = num1 + num2
+        alert(result)
+    }
+    function Sub(){
+        let num1= +inp1.value
+        let num2= +inp2.value
+        let result = num1 - num2
+        alert(result)
+    }
+    function mul(){
+        let num1= +inp1.value
+        let num2= +inp2.value
+        let result = num1 * num2
+        alert(result)
+    }
+    function div(){
+        let num1= +inp1.value
+        let num2= +inp2.value
+        let result = num1 / num2
+        alert(result)
+    }
+</script>
+
+</html>
